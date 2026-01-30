@@ -20,7 +20,7 @@ const server = http.createServer(app);
 // 2. Initialize Socket.io with proper settings
 const io = new Server(server, {
     cors: {
-        origin: "*", // In production, replace with your Vercel URL
+        origin: "https://livewirebooking.vercel.app/", // In production, replace with your Vercel URL
         methods: ["GET", "POST"]
     }
 });
